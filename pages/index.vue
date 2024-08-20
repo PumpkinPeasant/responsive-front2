@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import GallerySection from "~/components/GallerySection.vue";
 
-import CTISection from "~/components/CTISection.vue";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import CTISection from "~/components/CTISection.vue";
       <main-section/>
       <about-section/>
       <reviews-section/>
-      <c-t-i-section/>
+      <gallery-section/>
       <app-footer/>
     </main>
   </div>

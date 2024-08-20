@@ -18,7 +18,7 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
           helping brands grow fast. Engage your clients through
           compelling visuals that do most of the marketing for you.
         </p>
-        <button>LEARN MORE</button>
+        <button class="text-uppercase">Learn more</button>
       </div>
       <div>
         <img :src="TransformImg" alt="Egg image">
@@ -32,7 +32,7 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
         <p>Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we'll
           build and extend your brand in digital places.</p>
-        <button>LEARN MORE</button>
+        <button class="text-uppercase">Learn more</button>
       </div>
     </div>
     <div class="even-columns">

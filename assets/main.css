@@ -1,9 +1,10 @@
 :root {
-    --clr-accent-500: hsl(7, 99%, 70%);
-    --clr-accent-400: hsl(51, 100%, 49%);
-    --clr-accent-300: hsl(167, 40%, 24%);
-    --clr-accent-100: hsl(198, 62%, 26%);
-    --clr-accent-110: hsl(168, 34%, 41%);
+    --clr-orange-200: hsl(7, 99%, 70%);
+    --clr-yellow-300: hsl(51, 100%, 49%);
+    --clr-cyan-500: hsl(198, 62%, 26%);
+    --clr-green-400: hsl(167, 40%, 24%);
+    --clr-green-200: hsl(168, 34%, 41%);
+    --clr-green-100: hsl(167, 44%, 70%);
 
     --clr-primary-800: hsl(212, 27%, 19%);
     --clr-primary-300: hsl(213, 9%, 39%);
@@ -115,6 +116,18 @@ button {
 .text-neutral-100 {
     color: var(--clr-neutral-100);
 }
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*.container {*/
+/*    --max-width: 1110px;*/
+/*    --padding: 1rem;*/
+
+/*    width: min(var(--max-width), 100% - var(--padding) * 2);*/
+/*    margin-inline: auto;*/
+/*}*/
 
 .even-columns {
     display: grid;

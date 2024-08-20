@@ -4,7 +4,7 @@
 
 <template>
   <section class="main-section">
-    <h1 class="text-neutral-100">We are creatives</h1>
+    <h1 class="text-neutral-100 text-uppercase">We are creatives</h1>
   </section>
 </template>
 

@@ -34,7 +34,7 @@ const cards = [
 
 <template>
   <section>
-    <h2>Client testimonials</h2>
+    <h2 class="text-uppercase">Client testimonials</h2>
     <div class="even-columns">
       <div v-for="(card, index) in cards" :key="index">
         <img :src="card.avatar" alt="">

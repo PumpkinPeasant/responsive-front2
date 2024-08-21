@@ -9,16 +9,20 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
 <template>
   <section>
     <div class="even-columns">
-      <div class="flow">
+      <div class="section-block | flow">
         <h2 class="text-primary-800 fs-secondary-heading">
           Transform your brand
         </h2>
-        <p>
+        <p class="text-neutral-300">
           We are a full-service creative agency specializing in
           helping brands grow fast. Engage your clients through
           compelling visuals that do most of the marketing for you.
         </p>
-        <button class="text-uppercase text-primary-800 ff-primary">Learn more</button>
+        <button
+            class="button | text-uppercase text-primary-800 ff-primary"
+            style="--background-color: var(--clr-yellow-300)">
+          Learn more
+        </button>
       </div>
       <div>
         <img :src="TransformImg" alt="Egg image">
@@ -26,18 +30,22 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
     </div>
     <div class="even-columns">
       <img :src="StandOutImg" alt="Egg image">
-      <div class="flow">
+      <div class="section-block | flow">
         <h2 class="text-primary-800 fs-secondary-heading">Stand out to the right audience</h2>
-        <p>Using a collaborative formula of designers, researchers,
+        <p class="text-neutral-300">Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we'll
           build and extend your brand in digital places.</p>
-        <button class="text-uppercase text-primary-800 ff-primary">Learn more</button>
+        <button
+            class="button | text-uppercase text-primary-800 ff-primary"
+            style="--background-color: var(--clr-orange-200)">
+          Learn more
+        </button>
       </div>
     </div>
     <div class="even-columns">
       <div class="graphic-design">
         <img :src="GraphicDesignImg" alt="Orange">
-        <div class="card-content">
+        <div class="card-content | flow">
           <h2 class="text-green-400 fs-third-heading">
             Graphic Design
           </h2>
@@ -50,7 +58,7 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
       </div>
       <div class="photography">
         <img :src="PhotographyImg" alt="Orange">
-        <div class="card-content">
+        <div class="card-content | flow">
           <h2 class="text-cyan-400 fs-third-heading">
             Photography
           </h2>
@@ -84,12 +92,44 @@ img {
   width: 100%;
 }
 
+.section-block {
+  align-self: center;
+  justify-self: end;
+}
+
 .graphic-design, .photography {
   position: relative;
 }
 
 .card-content {
+  text-align: center;
   position: absolute;
   top: 50%;
 }
+
+.button {
+  background: transparent;
+  border: unset;
+  position: relative;
+  font-weight: var(--fw-bold);
+}
+
+.button::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  height: 0.6em;
+  bottom: 0;
+  left: -10px;
+  right: -10px;
+  border-radius: 5px;
+  background: var(--background-color);
+  opacity: 0.3;
+}
+
+.button:hover::before,
+.button:focus-visible::before {
+  opacity: 1;
+}
+
 </style>

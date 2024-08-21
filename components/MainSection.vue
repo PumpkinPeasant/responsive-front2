@@ -3,7 +3,7 @@ import ArrowIcon from "~/assets/icons/icon-arrow-down.svg";
 </script>
 
 <template>
-  <section class="main-section">
+  <section class="main-section | padding-block-900">
     <h1 class="text-neutral-100 text-uppercase fs-primary-heading fw-bold">We are creatives</h1>
     <arrow-icon class="arrow" :fontControlled="false" filled style="width: 2rem"/>
   </section>
@@ -15,7 +15,11 @@ import ArrowIcon from "~/assets/icons/icon-arrow-down.svg";
   background-image: url("/assets/images/desktop/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //gap: 5em
 }
 
 h1 {

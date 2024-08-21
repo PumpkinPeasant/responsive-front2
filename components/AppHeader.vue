@@ -37,7 +37,9 @@ const navItems = [
 
 <style scoped>
 .primary-header {
-  position: fixed;
+  top: 0;
+  position: sticky;
+  background-color: var(--clr-blue-300);
   width: 100%;
   z-index: 2;
   display: flex;

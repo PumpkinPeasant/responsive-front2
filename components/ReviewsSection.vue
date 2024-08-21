@@ -39,8 +39,10 @@ const cards = [
       <div v-for="(card, index) in cards" :key="index">
         <img :src="card.avatar" alt="">
         <p>{{ card.text }}</p>
-        <p>{{ card.name }}</p>
-        <p>{{ card.position }}</p>
+        <div>
+          <p class="ff-primary text-primary-800 fw-bold">{{ card.name }}</p>
+          <p>{{ card.position }}</p>
+        </div>
       </div>
     </div>
   </section>

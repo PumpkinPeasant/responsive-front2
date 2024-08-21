@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import GallerySection from "~/components/GallerySection.vue";
-
 </script>
 
 <template>

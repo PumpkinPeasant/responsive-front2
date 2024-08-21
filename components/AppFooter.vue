@@ -45,7 +45,7 @@ const navItems = [
 
 <template>
   <footer class="primary-footer">
-    <logo :fontControlled="false" filled style="width: 10rem"/>
+    <logo :fontControlled="false" style="width: 10rem"/>
     <nav aria-label="Secondary"
          class="secondary-navigation">
       <ul class="nav-list" role="list">
@@ -66,7 +66,15 @@ const navItems = [
 </template>
 
 <style scoped>
+*{
+  color: var(--clr-green-400);
+}
+
 .primary-footer {
   background-color: var(--clr-green-100);
+}
+
+.social-media {
+  display: flex;
 }
 </style>

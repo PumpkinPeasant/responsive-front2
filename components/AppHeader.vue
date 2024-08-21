@@ -24,13 +24,13 @@ const navItems = [
       <nav aria-label="Primary"
            class="primary-navigation"
            id="primary-navigation">
-        <ul class="nav-list" role="list">
+        <ul class="text-neutral-100 | nav-list" role="list">
           <li v-for="(item, index) in navItems" :key="index">
             <a :href="item.href">{{ item.title }}</a>
           </li>
         </ul>
       </nav>
-      <button class="text-uppercase">Contact</button>
+      <button class="text-uppercase ff-primary">Contact</button>
     </div>
   </header>
 </template>

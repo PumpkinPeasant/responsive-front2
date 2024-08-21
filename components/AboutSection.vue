@@ -9,8 +9,8 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
 <template>
   <section>
     <div class="even-columns">
-      <div>
-        <h2>
+      <div class="flow">
+        <h2 class="text-primary-800 fs-secondary-heading">
           Transform your brand
         </h2>
         <p>
@@ -18,7 +18,7 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
           helping brands grow fast. Engage your clients through
           compelling visuals that do most of the marketing for you.
         </p>
-        <button class="text-uppercase">Learn more</button>
+        <button class="text-uppercase text-primary-800 ff-primary">Learn more</button>
       </div>
       <div>
         <img :src="TransformImg" alt="Egg image">
@@ -26,23 +26,22 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
     </div>
     <div class="even-columns">
       <img :src="StandOutImg" alt="Egg image">
-      <div>
-        <h2>Stand out to the right
-          audience</h2>
+      <div class="flow">
+        <h2 class="text-primary-800 fs-secondary-heading">Stand out to the right audience</h2>
         <p>Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we'll
           build and extend your brand in digital places.</p>
-        <button class="text-uppercase">Learn more</button>
+        <button class="text-uppercase text-primary-800 ff-primary">Learn more</button>
       </div>
     </div>
     <div class="even-columns">
       <div class="graphic-design">
         <img :src="GraphicDesignImg" alt="Orange">
         <div class="card-content">
-          <h2>
+          <h2 class="text-green-400 fs-third-heading">
             Graphic Design
           </h2>
-          <p>
+          <p class="text-green-400">
             Great design makes you memorable. We deliver
             artwork that underscores your brand message
             and captures potential clients' attention.
@@ -52,10 +51,10 @@ import PhotographyImg from '~/assets/images/desktop/image-photography.jpg'
       <div class="photography">
         <img :src="PhotographyImg" alt="Orange">
         <div class="card-content">
-          <h2>
+          <h2 class="text-cyan-400 fs-third-heading">
             Photography
           </h2>
-          <p>
+          <p class="text-cyan-400">
             Increase your credibility by getting the most
             stunning, high-quality photos that improve your
             business image.

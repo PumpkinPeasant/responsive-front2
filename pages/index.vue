@@ -6,12 +6,12 @@ import GallerySection from "~/components/GallerySection.vue";
   <div>
     <app-header/>
     <main>
-      <main-section/>
+      <main-section  class="container"/>
       <about-section/>
-      <reviews-section/>
+      <reviews-section class="container"/>
       <gallery-section/>
-      <app-footer/>
     </main>
+    <app-footer class="container"/>
   </div>
 </template>
 

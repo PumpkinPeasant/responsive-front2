@@ -52,6 +52,8 @@
     --size-700: 3rem;
     --size-800: 4rem;
     --size-900: 5rem;
+
+    --max-width: 1440px;
 }
 
 @media (min-width: 50em) /* >800px */ {
@@ -218,13 +220,11 @@ button {
 }
 
 
-/*.container {*/
-/*    --max-width: 1110px;*/
-/*    --padding: 1rem;*/
-
-/*    width: min(var(--max-width), 100% - var(--padding) * 2);*/
-/*    margin-inline: auto;*/
-/*}*/
+.container > *{
+    --padding: 1rem;
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
 
 :where(.flow :not(:first-child)) {
     margin-top: var(--flow-spacer, 3em);

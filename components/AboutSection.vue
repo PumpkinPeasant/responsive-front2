@@ -93,8 +93,18 @@ img {
 }
 
 .section-block {
+  --padding: 1rem;
   align-self: center;
   justify-self: end;
+  width: min(var(--max-width) / 2, 100% - var(--padding) * 2);
+}
+
+.section-block:nth-child(odd) {
+  margin-left: auto;
+}
+
+.section-block:nth-child(even) {
+  margin-right: auto;
 }
 
 .graphic-design, .photography {
